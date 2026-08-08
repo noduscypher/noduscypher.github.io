@@ -3,6 +3,7 @@ import MeshText from '../components/originkit/ui/meshtexthover'
 import { TEAL, MUTED, pageWrap, inner, linkStyle, mutedStyle } from '../styles'
 
 const primaryLinks = [
+  { label: 'start here', desc: 'new to reticulum', to: '/start-here' },
   { label: 'offline library', desc: '54M articles', to: '/library' },
   { label: 'network', desc: 'people and communities', to: '/network' },
 ]
@@ -63,8 +64,6 @@ export default function Home() {
         </div>
 
         <div style={{ marginBottom: 40, fontSize: 13 }}>
-          <Link to="/start-here" style={{ color: TEAL, textDecoration: 'none' }}>start here</Link>
-          <span style={{ color: MUTED }}> · </span>
           <Link to="/about" style={{ color: TEAL, textDecoration: 'none' }}>about</Link>
           <span style={{ color: MUTED }}> · </span>
           <Link to="/content-policy" style={{ color: TEAL, textDecoration: 'none' }}>content policy</Link>
