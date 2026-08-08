@@ -53,15 +53,16 @@ export default function StartHere() {
             just an app on your phone or computer:
           </p>
           {[
-            { label: 'sideband', desc: 'android, ios, and desktop. the simplest starting point.' },
-            { label: 'columba', desc: 'native android app (ios in development). messaging and voice calls over bluetooth, wi-fi, or lora.' },
+            { label: 'sideband', desc: 'android, ios, and desktop. the simplest starting point.', guide: 'https://github.com/noduscypher/sideband-setup' },
+            { label: 'columba', desc: 'native android app (ios in development). messaging and voice calls over bluetooth, wi-fi, or lora.', guide: 'https://github.com/noduscypher/columba-manual' },
             { label: 'meshchatx', desc: 'desktop client with messaging and a page browser.' },
             { label: 'nomadnet', desc: 'terminal interface, for those comfortable with a command line.' },
-          ].map(({ label, desc }) => (
+          ].map(({ label, desc, guide }) => (
             <div key={label} style={{ marginBottom: 6, paddingLeft: 12, fontSize: 14, color: '#aaaaaa', lineHeight: 1.75 }}>
               <span style={{ color: '#555' }}>— </span>
               <span style={APP_NAME}>{label}</span>
               {' · '}{desc}
+              {guide && <><span style={{ color: '#444' }}> · </span><a href={guide} target="_blank" rel="noopener noreferrer" style={{ color: TEAL, textDecoration: 'none' }}>guide</a></>}
             </div>
           ))}
           <p style={{ color: '#aaaaaa', fontSize: 14, lineHeight: 1.75, margin: '10px 0 0' }}>
