@@ -3,7 +3,7 @@ import MeshText from '../components/originkit/ui/meshtexthover'
 import { TEAL, MUTED, pageWrap, inner, linkStyle, mutedStyle } from '../styles'
 
 const primaryLinks = [
-  { label: 'offline library', desc: '54M articles', to: '/library' },
+  { label: 'library', desc: 'where to find things', to: '/library' },
   { label: 'network', desc: 'people and communities', to: '/network' },
 ]
 
