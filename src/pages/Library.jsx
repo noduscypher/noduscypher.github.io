@@ -41,25 +41,6 @@ export default function Library() {
 
         <div style={{ marginBottom: 36 }}>
           <p style={{ color: TEAL, fontSize: 12, margin: '0 0 12px', letterSpacing: 1 }}>
-            on the node
-          </p>
-          <p style={{ color: '#aaaaaa', fontSize: 14, lineHeight: 1.7, margin: '0 0 12px' }}>
-            rawmesh runs its own offline library on a raspberry pi — wikipedia,
-            medicine and sciences, books, technical docs. It is served over
-            reticulum, so it keeps working when the internet does not.
-          </p>
-          <div style={{ marginBottom: 8, fontSize: 14, color: '#cccccc', wordBreak: 'break-all' }}>
-            2f756995d6febcde6b850c1c005774c7:/page/library.mu
-          </div>
-          <p style={{ color: MUTED, fontSize: 13, margin: 0 }}>
-            That address opens in a reticulum client, not a web browser.{' '}
-            <Link to="/start-here" style={{ color: TEAL, textDecoration: 'none' }}>start here</Link>
-            {' '}if you do not have one yet.
-          </p>
-        </div>
-
-        <div style={{ marginBottom: 36 }}>
-          <p style={{ color: TEAL, fontSize: 12, margin: '0 0 12px', letterSpacing: 1 }}>
             mirrors you can run yourself
           </p>
           <div style={{ marginBottom: 8 }}>
@@ -95,6 +76,25 @@ export default function Library() {
             ))}
           </div>
         ))}
+
+        <div style={{ marginBottom: 36, paddingTop: 8, borderTop: '1px solid #222' }}>
+          <p style={{ color: TEAL, fontSize: 12, margin: '20px 0 12px', letterSpacing: 1 }}>
+            on the node
+          </p>
+          <p style={{ color: '#aaaaaa', fontSize: 14, lineHeight: 1.7, margin: '0 0 12px' }}>
+            rawmesh runs its own offline library on a raspberry pi — wikipedia,
+            medicine and sciences, books, technical docs. It is served over
+            reticulum, so it keeps working when the internet does not.
+          </p>
+          <div style={{ marginBottom: 8, fontSize: 14, color: '#cccccc', wordBreak: 'break-all' }}>
+            2f756995d6febcde6b850c1c005774c7:/page/library.mu
+          </div>
+          <p style={{ color: MUTED, fontSize: 13, margin: 0 }}>
+            That address opens in a reticulum client, not a web browser.{' '}
+            <Link to="/start-here" style={{ color: TEAL, textDecoration: 'none' }}>start here</Link>
+            {' '}if you do not have one yet.
+          </p>
+        </div>
 
         <div>
           <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 13 }}>← back</Link>
