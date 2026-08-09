@@ -3,10 +3,10 @@ import { TEAL, MUTED, pageWrap, inner } from '../styles'
 
 const mesh = [
   { label: 'RNSPT', desc: '[pt] comunidade RNS Portugal', mesh: true },
-  { label: 'leandro fuego', desc: 'regenerative food', mesh: true },
 ]
 
 const web = [
+  { label: 'leandro fuego', desc: 'fire kitchen · regenerative food', href: 'https://rawmesh.neocities.org/leandro-fuego.html' },
   { label: 'darkmoonmagic', desc: 'inner sovereignty', href: 'https://darkmoonmagic.org' },
   { label: 'echo of coherence', desc: 'consciousness', href: 'https://youtube.com/@echoofcoherence' },
   { label: 'zitron.pt', desc: 'graphic & web design · bitcoin · nostr', href: 'https://zitron.pt' },
