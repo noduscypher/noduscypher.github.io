@@ -3,7 +3,6 @@ import MeshText from '../components/originkit/ui/meshtexthover'
 import { TEAL, MUTED, pageWrap, inner, linkStyle, mutedStyle } from '../styles'
 
 const primaryLinks = [
-  { label: 'start here', desc: 'new to reticulum', to: '/start-here' },
   { label: 'offline library', desc: '54M articles', to: '/library' },
   { label: 'network', desc: 'people and communities', to: '/network' },
 ]
@@ -47,8 +46,13 @@ export default function Home() {
         </div>
         <p style={{ ...mutedStyle, margin: '0 0 48px' }}>low-noise creator</p>
 
-        <div style={{ marginBottom: 48 }}>
+        <div style={{ marginBottom: 24 }}>
           {primaryLinks.map(l => <NavLink key={l.label} {...l} />)}
+        </div>
+
+        <div style={{ marginBottom: 48, fontSize: 14 }}>
+          <span style={{ color: MUTED }}>new to reticulum? · </span>
+          <Link to="/start-here" style={linkStyle}>start here</Link>
         </div>
 
         <div style={{ marginBottom: 32 }}>
