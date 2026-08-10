@@ -37,24 +37,24 @@ export default function ContentPolicy() {
     <div style={pageWrap}>
       <div style={inner}>
 
-        <p style={{ color: MUTED, fontSize: 13, marginBottom: 32 }}>
+        <p style={{ color: MUTED, fontSize: 16, marginBottom: 32 }}>
           <Link to="/" style={{ color: TEAL, textDecoration: 'none' }}>rawmesh</Link>
           <span style={{ color: MUTED }}> · content policy</span>
         </p>
 
-        <h1 style={{ color: '#cccccc', fontSize: 18, fontWeight: 'normal', margin: '0 0 40px', letterSpacing: 1 }}>
+        <h1 style={{ color: '#cccccc', fontSize: 22, fontWeight: 'normal', margin: '0 0 40px', letterSpacing: 1 }}>
           content policy
         </h1>
 
         {sections.map(({ title, body }) => (
           <div key={title} style={{ marginBottom: 28 }}>
-            <p style={{ color: TEAL, fontSize: 13, margin: '0 0 6px' }}>{title}</p>
-            <p style={{ color: '#aaaaaa', fontSize: 14, lineHeight: 1.7, margin: 0, whiteSpace: 'pre-line' }}>{body}</p>
+            <p style={{ color: TEAL, fontSize: 16, margin: '0 0 6px' }}>{title}</p>
+            <p style={{ color: '#aaaaaa', fontSize: 17, lineHeight: 1.7, margin: 0, whiteSpace: 'pre-line' }}>{body}</p>
           </div>
         ))}
 
         <div style={{ marginTop: 40 }}>
-          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 13 }}>← back</Link>
+          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 16 }}>← back</Link>
         </div>
 
       </div>

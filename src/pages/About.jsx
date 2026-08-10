@@ -6,15 +6,15 @@ export default function About() {
     <div style={pageWrap}>
       <div style={inner}>
 
-        <p style={{ color: MUTED, fontSize: 13, marginBottom: 32 }}>
+        <p style={{ color: MUTED, fontSize: 16, marginBottom: 32 }}>
           <Link to="/" style={{ color: TEAL, textDecoration: 'none' }}>rawmesh</Link>
         </p>
 
-        <h1 style={{ color: '#cccccc', fontSize: 18, fontWeight: 'normal', margin: '0 0 32px', letterSpacing: 1 }}>
+        <h1 style={{ color: '#cccccc', fontSize: 22, fontWeight: 'normal', margin: '0 0 32px', letterSpacing: 1 }}>
           about
         </h1>
 
-        <div style={{ color: '#aaaaaa', fontSize: 14, lineHeight: 1.8 }}>
+        <div style={{ color: '#aaaaaa', fontSize: 17, lineHeight: 1.8 }}>
           <p style={{ margin: '0 0 20px' }}>
             Not a blog. Not a service. A node.
           </p>
@@ -30,12 +30,12 @@ export default function About() {
           </p>
         </div>
 
-        <div style={{ marginTop: 40, color: MUTED, fontSize: 13 }}>
+        <div style={{ marginTop: 40, color: MUTED, fontSize: 16 }}>
           open-source · mesh · music · community
         </div>
 
         <div style={{ marginTop: 40 }}>
-          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 13 }}>← back</Link>
+          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 16 }}>← back</Link>
         </div>
 
       </div>

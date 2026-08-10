@@ -20,15 +20,15 @@ export default function Network() {
     <div style={pageWrap}>
       <div style={inner}>
 
-        <p style={{ color: MUTED, fontSize: 13, marginBottom: 32 }}>
+        <p style={{ color: MUTED, fontSize: 16, marginBottom: 32 }}>
           <Link to="/" style={{ color: TEAL, textDecoration: 'none' }}>rawmesh</Link>
           <span style={{ color: MUTED }}> · network</span>
         </p>
 
-        <h1 style={{ color: '#cccccc', fontSize: 18, fontWeight: 'normal', margin: '0 0 8px', letterSpacing: 1 }}>
+        <h1 style={{ color: '#cccccc', fontSize: 22, fontWeight: 'normal', margin: '0 0 8px', letterSpacing: 1 }}>
           network
         </h1>
-        <p style={{ color: MUTED, fontSize: 13, margin: '0 0 48px' }}>
+        <p style={{ color: MUTED, fontSize: 16, margin: '0 0 48px' }}>
           people and communities
         </p>
 
@@ -37,21 +37,21 @@ export default function Network() {
             href="https://meshtastic.pt"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: TEAL, fontSize: 12, letterSpacing: 1, textDecoration: 'none', display: 'block', marginBottom: 16 }}
+            style={{ color: TEAL, fontSize: 15, letterSpacing: 1, textDecoration: 'none', display: 'block', marginBottom: 16 }}
           >
             mesh only
           </a>
           {mesh.map(({ label, desc }) => (
             <div key={label} style={{ marginBottom: 8 }}>
-              <span style={{ color: MUTED, fontSize: 14 }}>{label}</span>
-              <span style={{ color: MUTED, fontSize: 14 }}> · {desc}</span>
-              <span style={{ color: '#444', fontSize: 12 }}> [mesh]</span>
+              <span style={{ color: MUTED, fontSize: 17 }}>{label}</span>
+              <span style={{ color: MUTED, fontSize: 17 }}> · {desc}</span>
+              <span style={{ color: '#444', fontSize: 15 }}> [mesh]</span>
             </div>
           ))}
         </div>
 
         <div style={{ marginBottom: 36 }}>
-          <p style={{ color: TEAL, fontSize: 12, margin: '0 0 12px', letterSpacing: 1 }}>
+          <p style={{ color: TEAL, fontSize: 15, margin: '0 0 12px', letterSpacing: 1 }}>
             web
           </p>
           {web.map(({ label, desc, href }) => (
@@ -60,17 +60,17 @@ export default function Network() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: '#cccccc', textDecoration: 'none', fontSize: 14 }}
+                style={{ color: '#cccccc', textDecoration: 'none', fontSize: 17 }}
               >
                 {label}
               </a>
-              <span style={{ color: MUTED, fontSize: 14 }}> · {desc}</span>
+              <span style={{ color: MUTED, fontSize: 17 }}> · {desc}</span>
             </div>
           ))}
         </div>
 
         <div>
-          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 13 }}>← back</Link>
+          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 16 }}>← back</Link>
         </div>
 
       </div>

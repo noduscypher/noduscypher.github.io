@@ -7,10 +7,43 @@
 body {
   margin: 0;
   padding: 0;
-  background: #0d0d0d;
+  background: #111111;
+  line-height: 1.75;
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
+}
+
+/* luz de sinal — fria; a gémea da brasa da página do leandro.
+   pseudo-elemento fixo em vez de background-attachment, que parte no
+   safari do iphone. o pageWrap não pode ter fundo próprio ou tapa isto. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(110% 45% at 50% 106%,
+      rgba(121, 221, 187, 0.17) 0%,
+      rgba(121, 221, 187, 0.075) 34%,
+      transparent 72%),
+    radial-gradient(85% 55% at 50% 0%,
+      rgba(0, 0, 0, 0.40) 0%,
+      transparent 58%);
+}
+
+/* o hover a opacity .75 quase não se percebe — linha por baixo, na cor
+   do próprio link */
+a {
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease;
+}
+
+a:hover,
+a:focus-visible {
+  opacity: 1;
+  border-bottom-color: currentColor;
 }

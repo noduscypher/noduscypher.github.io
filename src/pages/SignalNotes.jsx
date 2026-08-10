@@ -6,18 +6,18 @@ export default function SignalNotes() {
     <div style={pageWrap}>
       <div style={inner}>
 
-        <p style={{ color: MUTED, fontSize: 13, marginBottom: 32 }}>
+        <p style={{ color: MUTED, fontSize: 16, marginBottom: 32 }}>
           <Link to="/" style={{ color: TEAL, textDecoration: 'none' }}>rawmesh</Link>
           <span style={{ color: MUTED }}> · signal notes</span>
         </p>
 
-        <h1 style={{ color: '#cccccc', fontSize: 18, fontWeight: 'normal', margin: '0 0 8px', letterSpacing: 1 }}>
+        <h1 style={{ color: '#cccccc', fontSize: 22, fontWeight: 'normal', margin: '0 0 8px', letterSpacing: 1 }}>
           signal notes
         </h1>
-        <p style={{ color: MUTED, fontSize: 13, margin: '0 0 40px' }}>thoughts in progress</p>
+        <p style={{ color: MUTED, fontSize: 16, margin: '0 0 40px' }}>thoughts in progress</p>
 
-        <div style={{ color: '#aaaaaa', fontSize: 14, lineHeight: 1.8, marginBottom: 40 }}>
-          <p style={{ color: TEAL, margin: '0 0 16px', fontSize: 13 }}>3d printing · diy solar nodes</p>
+        <div style={{ color: '#aaaaaa', fontSize: 17, lineHeight: 1.8, marginBottom: 40 }}>
+          <p style={{ color: TEAL, margin: '0 0 16px', fontSize: 16 }}>3d printing · diy solar nodes</p>
 
           <p style={{ margin: '0 0 16px' }}>
             the idea is simple: off-grid mesh infrastructure
@@ -37,14 +37,14 @@ export default function SignalNotes() {
         </div>
 
         <div style={{ borderTop: '1px solid #222', paddingTop: 32, marginBottom: 32 }}>
-          <p style={{ color: TEAL, fontSize: 13, margin: '0 0 12px' }}>open for discussion</p>
-          <p style={{ color: MUTED, fontSize: 13, margin: '0 0 8px' }}>are you experimenting with solar nodes?</p>
-          <p style={{ color: MUTED, fontSize: 13, margin: '0 0 8px' }}>what materials do you use for outdoor builds?</p>
-          <p style={{ color: MUTED, fontSize: 13, margin: 0 }}>what is the biggest obstacle in your setup?</p>
+          <p style={{ color: TEAL, fontSize: 16, margin: '0 0 12px' }}>open for discussion</p>
+          <p style={{ color: MUTED, fontSize: 16, margin: '0 0 8px' }}>are you experimenting with solar nodes?</p>
+          <p style={{ color: MUTED, fontSize: 16, margin: '0 0 8px' }}>what materials do you use for outdoor builds?</p>
+          <p style={{ color: MUTED, fontSize: 16, margin: 0 }}>what is the biggest obstacle in your setup?</p>
         </div>
 
         <div style={{ marginTop: 40 }}>
-          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 13 }}>← back</Link>
+          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 16 }}>← back</Link>
         </div>
 
       </div>
