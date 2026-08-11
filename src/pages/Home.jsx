@@ -10,12 +10,6 @@ const primaryLinks = [
 // Folga de cada lado do título, para a malha se deformar sem cortar.
 const TITLE_PAD = 26
 
-const contact = [
-  { label: 'lxmf', value: 'e0b83793dc64a49b26649ee663fd4f15', href: null },
-  { label: 'code', value: 'github.com/noduscypher', href: 'https://github.com/noduscypher' },
-  { label: 'music', value: 'bandcamp.com/noduscypher', href: 'https://bandcamp.com/noduscypher' },
-]
-
 function NavLink({ label, desc, to, href, mesh }) {
   const labelEl = mesh
     ? <span style={{ color: MUTED, fontSize: 17 }}>{label}</span>
@@ -73,19 +67,9 @@ export default function Home() {
           <Link to="/start-here" style={linkStyle}>start here</Link>
         </div>
 
-        <div style={{ marginBottom: 32 }}>
-          {contact.map(({ label, value, href }) => (
-            <div key={label} style={{ marginBottom: 4, fontSize: TYPE.small, display: 'flex', gap: 12 }}>
-              <span style={{ color: MUTED, width: 52, flexShrink: 0 }}>{label}</span>
-              {href
-                ? <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: TEAL, textDecoration: 'none', wordBreak: 'break-all' }}>{value}</a>
-                : <span style={{ color: TEAL, wordBreak: 'break-all' }}>{value}</span>
-              }
-            </div>
-          ))}
-        </div>
-
         <div style={{ marginBottom: 40, fontSize: 16 }}>
+          <Link to="/contacts" style={{ color: TEAL, textDecoration: 'none' }}>contacts</Link>
+          <span style={{ color: MUTED }}> · </span>
           <Link to="/about" style={{ color: TEAL, textDecoration: 'none' }}>about</Link>
           <span style={{ color: MUTED }}> · </span>
           <Link to="/content-policy" style={{ color: TEAL, textDecoration: 'none' }}>content policy</Link>
