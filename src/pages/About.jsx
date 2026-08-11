@@ -1,41 +1,45 @@
 import { Link } from 'react-router-dom'
-import { TEAL, MUTED, pageWrap, inner } from '../styles'
+import { TEAL, MUTED, TYPE, pageWrap, inner, linkStyle } from '../styles'
 
 export default function About() {
   return (
     <div style={pageWrap}>
       <div style={inner}>
 
-        <p style={{ color: MUTED, fontSize: 16, marginBottom: 32 }}>
+        <p style={{ color: MUTED, fontSize: TYPE.small, marginBottom: 32 }}>
           <Link to="/" style={{ color: TEAL, textDecoration: 'none' }}>rawmesh</Link>
         </p>
 
-        <h1 style={{ color: '#cccccc', fontSize: 22, fontWeight: 'normal', margin: '0 0 32px', letterSpacing: 1 }}>
+        <h1 style={{ color: '#cccccc', fontSize: TYPE.title, fontWeight: 'normal', margin: '0 0 32px', letterSpacing: 1 }}>
           about
         </h1>
 
-        <div style={{ color: '#aaaaaa', fontSize: 17, lineHeight: 1.8 }}>
+        <div style={{ color: '#aaaaaa', fontSize: TYPE.base, lineHeight: 1.8 }}>
           <p style={{ margin: '0 0 20px' }}>
-            Not a blog. Not a service. A node.
+            not a blog. not a service. a node.
           </p>
           <p style={{ margin: '0 0 20px' }}>
-            rawmesh is a personal presence on the Reticulum mesh —
-            running on a Raspberry Pi in Beira Baixa, Portugal.
-            Off the cloud, off the grid, reachable on the mesh.
+            rawmesh is a personal presence on the reticulum mesh — a raspberry
+            pi in beira baixa, portugal, off the cloud & reachable on the mesh.
           </p>
           <p style={{ margin: '0 0 20px' }}>
-            Here you'll find an offline library, a chat room,
+            this site is the surface-web reflection of that node. same identity,
+            different medium. new to reticulum?{' '}
+            <Link to="/start-here" style={linkStyle}>start here</Link>.
+          </p>
+          <p style={{ margin: '0 0 20px' }}>
+            here you'll find an offline library, a chat room,
             music, and pages from people in this network.
-            A small, quiet hub for those who prefer signal over noise.
+            a small, quiet hub for those who prefer signal over noise.
           </p>
         </div>
 
-        <div style={{ marginTop: 40, color: MUTED, fontSize: 16 }}>
+        <div style={{ marginTop: 40, color: MUTED, fontSize: TYPE.small }}>
           open-source · mesh · music · community
         </div>
 
         <div style={{ marginTop: 40 }}>
-          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 16 }}>← back</Link>
+          <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: TYPE.small }}>← back</Link>
         </div>
 
       </div>
