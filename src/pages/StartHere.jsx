@@ -53,8 +53,8 @@ export default function StartHere() {
             just an app on your phone or computer:
           </p>
           {[
-            { label: 'sideband', desc: 'android, ios, and desktop. the simplest starting point.', guide: 'https://github.com/noduscypher/sideband-setup' },
-            { label: 'columba', desc: 'native android app (ios in development). messaging and voice calls over bluetooth, wi-fi, or lora.', guide: 'https://github.com/noduscypher/columba-manual' },
+            { label: 'columba', desc: 'native android app (ios in development). the most reliable way to browse this site, plus messaging and voice calls over bluetooth, wi-fi, or lora.', guide: 'https://github.com/noduscypher/columba-manual' },
+            { label: 'sideband', desc: 'android, ios, and desktop. good for messaging; page browsing is harder to find in the interface.', guide: 'https://github.com/noduscypher/sideband-setup' },
             { label: 'meshchatx', desc: 'desktop client with messaging and a page browser.' },
             { label: 'nomadnet', desc: 'terminal interface, for those comfortable with a command line.' },
           ].map(({ label, desc, guide }) => (
