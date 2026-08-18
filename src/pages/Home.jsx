@@ -5,6 +5,7 @@ import { TEAL, MUTED, TYPE, pageWrap, inner, linkStyle, mutedStyle } from '../st
 const primaryLinks = [
   { label: 'library', desc: 'where to find things', to: '/library' },
   { label: 'network', desc: 'people and communities', to: '/network' },
+  { label: 'rock paper scissors', desc: 'quick game, no accounts', to: '/rock-paper-scissors' },
 ]
 
 // Folga de cada lado do título, para a malha se deformar sem cortar.

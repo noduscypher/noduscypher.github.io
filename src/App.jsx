@@ -7,6 +7,7 @@ import Library from './pages/Library'
 import Network from './pages/Network'
 import StartHere from './pages/StartHere'
 import Contacts from './pages/Contacts'
+import RockPaperScissors from './pages/RockPaperScissors'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/network" element={<Network />} />
         <Route path="/start-here" element={<StartHere />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
       </Routes>
     </HashRouter>
   )
