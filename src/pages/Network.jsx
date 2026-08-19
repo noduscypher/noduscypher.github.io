@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom'
 import { TEAL, MUTED, pageWrap, inner } from '../styles'
 
-const mesh = []
-
 const web = [
   { label: 'rnspt', desc: '[pt] comunidade Reticulum em Portugal', to: '/rnspt' },
+  { label: 'MeshtasticPT', desc: 'comunidade Meshtastic em Portugal', href: 'https://meshtastic.pt' },
   { label: 'leandro fuego', desc: 'fire kitchen · regenerative food', href: 'https://rawmesh.neocities.org/leandro-fuego.html' },
   { label: 'darkmoonmagic', desc: 'inner sovereignty', href: 'https://darkmoonmagic.org' },
   { label: 'echo of coherence', desc: 'consciousness', href: 'https://youtube.com/@echoofcoherence' },
@@ -30,24 +29,6 @@ export default function Network() {
         <p style={{ color: MUTED, fontSize: 16, margin: '0 0 48px' }}>
           people and communities
         </p>
-
-        <div style={{ marginBottom: 36 }}>
-          <a
-            href="https://meshtastic.pt"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: TEAL, fontSize: 15, letterSpacing: 1, textDecoration: 'none', display: 'block', marginBottom: 16 }}
-          >
-            mesh only
-          </a>
-          {mesh.map(({ label, desc }) => (
-            <div key={label} style={{ marginBottom: 8 }}>
-              <span style={{ color: MUTED, fontSize: 17 }}>{label}</span>
-              <span style={{ color: MUTED, fontSize: 17 }}> · {desc}</span>
-              <span style={{ color: '#444', fontSize: 15 }}> [mesh]</span>
-            </div>
-          ))}
-        </div>
 
         <div style={{ marginBottom: 36 }}>
           <p style={{ color: TEAL, fontSize: 15, margin: '0 0 12px', letterSpacing: 1 }}>
