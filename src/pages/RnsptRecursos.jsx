@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MUTED, TYPE, pageWrap, inner, RNSPT_GREEN } from './rnsptStyles'
+import { MUTED, TYPE, pageWrap, inner, RNSPT_ACCENT } from './rnsptStyles'
 
 const oficial = [
   { label: 'reticulum.network', desc: 'documentação e protocolo oficial', href: 'https://reticulum.network' },
@@ -31,7 +31,7 @@ export default function RnsptRecursos() {
       <div style={inner}>
 
         <p style={{ color: MUTED, fontSize: TYPE.small, marginBottom: 32 }}>
-          <Link to="/rnspt" style={{ color: RNSPT_GREEN, textDecoration: 'none' }}>rnspt</Link>
+          <Link to="/rnspt" style={{ color: RNSPT_ACCENT, textDecoration: 'underline' }}>rnspt</Link>
           <span style={{ color: MUTED }}> · recursos</span>
         </p>
 
@@ -40,14 +40,14 @@ export default function RnsptRecursos() {
         </h1>
 
         <div style={{ marginBottom: 36 }}>
-          <p style={{ color: RNSPT_GREEN, fontSize: TYPE.tag, margin: '0 0 12px', letterSpacing: 1 }}>
+          <p style={{ color: RNSPT_ACCENT, fontSize: TYPE.tag, margin: '0 0 12px', letterSpacing: 1 }}>
             oficial
           </p>
           {oficial.map(l => <LinkRow key={l.label} {...l} />)}
         </div>
 
         <div style={{ marginBottom: 36 }}>
-          <p style={{ color: RNSPT_GREEN, fontSize: TYPE.tag, margin: '0 0 12px', letterSpacing: 1 }}>
+          <p style={{ color: RNSPT_ACCENT, fontSize: TYPE.tag, margin: '0 0 12px', letterSpacing: 1 }}>
             guias traduzidos
           </p>
           <p style={{ color: '#aaaaaa', fontSize: TYPE.base, lineHeight: 1.8, margin: '0 0 16px' }}>
@@ -58,7 +58,7 @@ export default function RnsptRecursos() {
         </div>
 
         <div>
-          <Link to="/rnspt" style={{ color: RNSPT_GREEN, textDecoration: 'none', fontSize: TYPE.small }}>← rnspt</Link>
+          <Link to="/rnspt" style={{ color: RNSPT_ACCENT, textDecoration: 'underline', fontSize: TYPE.small }}>← rnspt</Link>
         </div>
 
       </div>

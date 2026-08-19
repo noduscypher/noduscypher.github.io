@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MUTED, TYPE, pageWrap, inner, RNSPT_GREEN } from './rnsptStyles'
+import { MUTED, TYPE, pageWrap, inner, RNSPT_ACCENT } from './rnsptStyles'
 
 const APP_NAME = { color: '#cccccc' }
 
@@ -9,7 +9,7 @@ export default function RnsptAderir() {
       <div style={inner}>
 
         <p style={{ color: MUTED, fontSize: TYPE.small, marginBottom: 32 }}>
-          <Link to="/rnspt" style={{ color: RNSPT_GREEN, textDecoration: 'none' }}>rnspt</Link>
+          <Link to="/rnspt" style={{ color: RNSPT_ACCENT, textDecoration: 'underline' }}>rnspt</Link>
           <span style={{ color: MUTED }}> · aderir</span>
         </p>
 
@@ -21,7 +21,7 @@ export default function RnsptAderir() {
         </p>
 
         <div style={{ marginBottom: 32 }}>
-          <p style={{ color: RNSPT_GREEN, fontSize: TYPE.tag, margin: '0 0 8px' }}>o que é a Reticulum?</p>
+          <p style={{ color: RNSPT_ACCENT, fontSize: TYPE.tag, margin: '0 0 8px' }}>o que é a Reticulum?</p>
           <p style={{ color: '#aaaaaa', fontSize: TYPE.base, lineHeight: 1.8, margin: '0 0 10px' }}>
             a maior parte das redes que usas — internet, dados móveis, apps
             de mensagens — passam por servidores de empresas. essas empresas
@@ -35,7 +35,7 @@ export default function RnsptAderir() {
         </div>
 
         <div style={{ marginBottom: 32 }}>
-          <p style={{ color: RNSPT_GREEN, fontSize: TYPE.tag, margin: '0 0 8px' }}>o que preciso?</p>
+          <p style={{ color: RNSPT_ACCENT, fontSize: TYPE.tag, margin: '0 0 8px' }}>o que preciso?</p>
           <p style={{ color: '#aaaaaa', fontSize: TYPE.base, lineHeight: 1.8, margin: '0 0 8px' }}>
             uma app no telemóvel ou computador:
           </p>
@@ -49,7 +49,7 @@ export default function RnsptAderir() {
               <span style={APP_NAME}>{label}</span>
               {' · '}{desc}
               {' '}
-              <a href={website} target="_blank" rel="noopener noreferrer" style={{ color: RNSPT_GREEN, textDecoration: 'none' }}>website</a>
+              <a href={website} target="_blank" rel="noopener noreferrer" style={{ color: RNSPT_ACCENT, textDecoration: 'underline' }}>website</a>
             </div>
           ))}
           <p style={{ color: '#aaaaaa', fontSize: TYPE.base, lineHeight: 1.8, margin: '10px 0 0' }}>
@@ -58,7 +58,7 @@ export default function RnsptAderir() {
         </div>
 
         <div style={{ marginBottom: 32 }}>
-          <p style={{ color: RNSPT_GREEN, fontSize: TYPE.tag, margin: '0 0 8px' }}>configurar a ligação</p>
+          <p style={{ color: RNSPT_ACCENT, fontSize: TYPE.tag, margin: '0 0 8px' }}>configurar a ligação</p>
           <p style={{ color: '#aaaaaa', fontSize: TYPE.base, lineHeight: 1.8, margin: '0 0 8px' }}>
             a app precisa de saber por onde falar. opções mais comuns:
           </p>
@@ -98,17 +98,17 @@ export default function RnsptAderir() {
         </div>
 
         <div style={{ marginBottom: 32 }}>
-          <p style={{ color: RNSPT_GREEN, fontSize: TYPE.tag, margin: '0 0 8px' }}>dizer olá</p>
+          <p style={{ color: RNSPT_ACCENT, fontSize: TYPE.tag, margin: '0 0 8px' }}>dizer olá</p>
           <p style={{ color: '#aaaaaa', fontSize: TYPE.base, lineHeight: 1.8, margin: 0 }}>
             ligado à rede, a tua app anuncia-te automaticamente. procura outros
             nós — vais vê-los aparecer aos poucos. se quiseres aparecer na
             lista de nós PT, fala connosco pelo{' '}
-            <Link to="/contacts" style={{ color: RNSPT_GREEN, textDecoration: 'none' }}>lxmf</Link>.
+            <Link to="/contacts" style={{ color: RNSPT_ACCENT, textDecoration: 'underline' }}>lxmf</Link>.
           </p>
         </div>
 
         <div>
-          <Link to="/rnspt" style={{ color: RNSPT_GREEN, textDecoration: 'none', fontSize: TYPE.small }}>← rnspt</Link>
+          <Link to="/rnspt" style={{ color: RNSPT_ACCENT, textDecoration: 'underline', fontSize: TYPE.small }}>← rnspt</Link>
         </div>
 
       </div>

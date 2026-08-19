@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MUTED, TYPE, pageWrap, inner, RNSPT_GREEN } from './rnsptStyles'
+import { MUTED, TYPE, pageWrap, inner, RNSPT_ACCENT } from './rnsptStyles'
 
 export default function RnsptHub() {
   return (
@@ -7,11 +7,11 @@ export default function RnsptHub() {
       <div style={inner}>
 
         <p style={{ color: MUTED, fontSize: TYPE.small, marginBottom: 32 }}>
-          <Link to="/" style={{ color: RNSPT_GREEN, textDecoration: 'none' }}>rawmesh</Link>
+          <Link to="/" style={{ color: RNSPT_ACCENT, textDecoration: 'underline' }}>rawmesh</Link>
           <span style={{ color: MUTED }}> · rnspt</span>
         </p>
 
-        <h1 style={{ color: RNSPT_GREEN, fontSize: 32, fontWeight: 'bold', margin: '0 0 6px', letterSpacing: 1 }}>
+        <h1 style={{ color: RNSPT_ACCENT, fontSize: 32, fontWeight: 'bold', margin: '0 0 6px', letterSpacing: 1 }}>
           RNSPT
         </h1>
         <p style={{ color: MUTED, fontSize: TYPE.small, margin: '0 0 4px' }}>
@@ -27,11 +27,11 @@ export default function RnsptHub() {
         </p>
 
         <div style={{ marginBottom: 40 }}>
-          <p style={{ color: RNSPT_GREEN, fontSize: TYPE.tag, margin: '0 0 12px', letterSpacing: 1 }}>
+          <p style={{ color: RNSPT_ACCENT, fontSize: TYPE.tag, margin: '0 0 12px', letterSpacing: 1 }}>
             ligar ao hub PT
           </p>
           <p style={{ color: '#aaaaaa', fontSize: TYPE.base, lineHeight: 1.8, margin: '0 0 12px' }}>
-            adiciona isto ao teu <code style={{ color: RNSPT_GREEN }}>~/.reticulum/config</code>:
+            adiciona isto ao teu <code style={{ color: RNSPT_ACCENT }}>~/.reticulum/config</code>:
           </p>
           <pre style={{
             background: '#0a0a0a',
@@ -52,15 +52,15 @@ export default function RnsptHub() {
         </div>
 
         <div style={{ marginBottom: 40 }}>
-          <Link to="/rnspt/recursos" style={{ color: RNSPT_GREEN, textDecoration: 'none', fontSize: TYPE.base }}>recursos</Link>
+          <Link to="/rnspt/recursos" style={{ color: RNSPT_ACCENT, textDecoration: 'underline', fontSize: TYPE.base }}>recursos</Link>
           <span style={{ color: MUTED, fontSize: TYPE.base }}> · guias e software</span>
           <br />
-          <Link to="/rnspt/aderir" style={{ color: RNSPT_GREEN, textDecoration: 'none', fontSize: TYPE.base }}>aderir</Link>
+          <Link to="/rnspt/aderir" style={{ color: RNSPT_ACCENT, textDecoration: 'underline', fontSize: TYPE.base }}>aderir</Link>
           <span style={{ color: MUTED, fontSize: TYPE.base }}> · nunca usaste Reticulum? começa aqui</span>
         </div>
 
         <div>
-          <Link to="/" style={{ color: RNSPT_GREEN, textDecoration: 'none', fontSize: TYPE.small }}>← rawmesh</Link>
+          <Link to="/" style={{ color: RNSPT_ACCENT, textDecoration: 'underline', fontSize: TYPE.small }}>← rawmesh</Link>
         </div>
 
       </div>

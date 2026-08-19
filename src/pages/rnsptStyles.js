@@ -1,8 +1,10 @@
 import { MUTED, FONT, TYPE, pageWrap, inner } from '../styles'
 
 // Identidade própria do RNSPT, distinta do teal do rawmesh e do brasa do
-// Leandro Fuego — verde-sinal, mesma família estrutural (mesmo esquema
-// usado no .mu: fundo escuro, cinzentos mudos, um único acento).
-export const RNSPT_GREEN = '#4fbf72'
+// Leandro Fuego. Primeira tentativa foi um verde-sinal, mas colidia quase
+// exatamente com o verde oficial do Meshtastic (#67ea94) — o site oficial
+// da Reticulum (reticulum.network) não usa nenhuma cor viva, é cinza-azulado
+// escuro com texto quase branco. Monocromático evita as duas confusões.
+export const RNSPT_ACCENT = '#eeeeee'
 
 export { MUTED, FONT, TYPE, pageWrap, inner }
