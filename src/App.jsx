@@ -8,6 +8,9 @@ import Network from './pages/Network'
 import StartHere from './pages/StartHere'
 import Contacts from './pages/Contacts'
 import RockPaperScissors from './pages/RockPaperScissors'
+import RnsptHub from './pages/RnsptHub'
+import RnsptRecursos from './pages/RnsptRecursos'
+import RnsptAderir from './pages/RnsptAderir'
 
 export default function App() {
   return (
@@ -22,6 +25,9 @@ export default function App() {
         <Route path="/start-here" element={<StartHere />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
+        <Route path="/rnspt" element={<RnsptHub />} />
+        <Route path="/rnspt/recursos" element={<RnsptRecursos />} />
+        <Route path="/rnspt/aderir" element={<RnsptAderir />} />
       </Routes>
     </HashRouter>
   )

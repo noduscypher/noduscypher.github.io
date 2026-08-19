@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
 import { TEAL, MUTED, pageWrap, inner } from '../styles'
 
-const mesh = [
-  { label: 'RNSPT', desc: '[pt] comunidade RNS Portugal', mesh: true },
-]
+const mesh = []
 
 const web = [
+  { label: 'rnspt', desc: '[pt] comunidade Reticulum em Portugal', to: '/rnspt' },
   { label: 'leandro fuego', desc: 'fire kitchen · regenerative food', href: 'https://rawmesh.neocities.org/leandro-fuego.html' },
   { label: 'darkmoonmagic', desc: 'inner sovereignty', href: 'https://darkmoonmagic.org' },
   { label: 'echo of coherence', desc: 'consciousness', href: 'https://youtube.com/@echoofcoherence' },
@@ -54,16 +53,12 @@ export default function Network() {
           <p style={{ color: TEAL, fontSize: 15, margin: '0 0 12px', letterSpacing: 1 }}>
             web
           </p>
-          {web.map(({ label, desc, href }) => (
+          {web.map(({ label, desc, href, to }) => (
             <div key={label} style={{ marginBottom: 8 }}>
-              <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: '#cccccc', textDecoration: 'none', fontSize: 17 }}
-              >
-                {label}
-              </a>
+              {to
+                ? <Link to={to} style={{ color: '#cccccc', textDecoration: 'none', fontSize: 17 }}>{label}</Link>
+                : <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none', fontSize: 17 }}>{label}</a>
+              }
               <span style={{ color: MUTED, fontSize: 17 }}> · {desc}</span>
             </div>
           ))}
