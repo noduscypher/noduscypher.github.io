@@ -8,6 +8,7 @@ import StartHere from './pages/StartHere'
 import Contacts from './pages/Contacts'
 import RockPaperScissors from './pages/RockPaperScissors'
 import Minesweeper from './pages/Minesweeper'
+import Pacman from './pages/Pacman'
 import RnsptHub from './pages/RnsptHub'
 import RnsptRecursos from './pages/RnsptRecursos'
 import RnsptAderir from './pages/RnsptAderir'
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/minesweeper" element={<Minesweeper />} />
+        <Route path="/pacman" element={<Pacman />} />
         <Route path="/rnspt" element={<RnsptHub />} />
         <Route path="/rnspt/recursos" element={<RnsptRecursos />} />
         <Route path="/rnspt/aderir" element={<RnsptAderir />} />

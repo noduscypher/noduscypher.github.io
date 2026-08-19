@@ -8,6 +8,7 @@ const primaryLinks = [
   { label: 'network', desc: 'people and communities', to: '/network' },
   { label: 'rock paper scissors', desc: 'quick game, no accounts', to: '/rock-paper-scissors' },
   { label: 'minesweeper', desc: '9×9, 10 mines', to: '/minesweeper' },
+  { label: 'pacman', desc: 'arrow keys or wasd', to: '/pacman' },
 ]
 
 // Folga de cada lado do título, para a malha se deformar sem cortar.
