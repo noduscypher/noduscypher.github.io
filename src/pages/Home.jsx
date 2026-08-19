@@ -78,17 +78,9 @@ export default function Home() {
           <Link to="/content-policy" style={{ color: TEAL, textDecoration: 'none' }}>content policy</Link>
         </div>
 
-        <p style={{ color: MUTED, fontSize: 16, margin: '0 0 24px' }}>
+        <p style={{ color: MUTED, fontSize: 16, margin: 0 }}>
           walk quietly & keep the signal alive.
         </p>
-
-        <svg width="88" height="31" viewBox="0 0 88 31" role="img" aria-label="rawmesh">
-          <rect width="88" height="31" fill="#111111" />
-          <rect x="0.5" y="0.5" width="87" height="30" fill="none" stroke={TEAL} strokeWidth="1" />
-          <circle cx="44" cy="10" r="2" fill={TEAL} />
-          <circle cx="44" cy="10" r="5.5" fill="none" stroke={TEAL} strokeOpacity="0.45" />
-          <text x="44" y="24" textAnchor="middle" fontFamily="ui-monospace, Consolas, monospace" fontSize="9" fontWeight="bold" fill={TEAL} letterSpacing="0.5">raw · mesh</text>
-        </svg>
 
       </div>
     </div>
