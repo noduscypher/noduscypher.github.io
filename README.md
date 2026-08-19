@@ -5,6 +5,8 @@ Beira Baixa, Portugal, reachable off the cloud.
 
 **Live:** [noduscypher.github.io](https://noduscypher.github.io)
 
+![rawmesh home page](.github/screenshot.png)
+
 ## What this is
 
 Not a blog. Not a service. A node. This repo is the source for the
