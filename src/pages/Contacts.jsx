@@ -5,6 +5,7 @@ const contact = [
   { label: 'lxmf', value: 'e0b83793dc64a49b26649ee663fd4f15', href: null },
   { label: 'code', value: 'github.com/noduscypher', href: 'https://github.com/noduscypher' },
   { label: 'music', value: 'bandcamp.com/noduscypher', href: 'https://bandcamp.com/noduscypher' },
+  { label: 'lightning', value: 'trustyflame02@zeuspay.com', href: null },
 ]
 
 export default function Contacts() {
@@ -24,7 +25,7 @@ export default function Contacts() {
         <div style={{ marginBottom: 32 }}>
           {contact.map(({ label, value, href }) => (
             <div key={label} style={{ marginBottom: 4, fontSize: TYPE.small, display: 'flex', gap: 12 }}>
-              <span style={{ color: MUTED, width: 52, flexShrink: 0 }}>{label}</span>
+              <span style={{ color: MUTED, width: 88, flexShrink: 0 }}>{label}</span>
               {href
                 ? <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: TEAL, textDecoration: 'none', wordBreak: 'break-all' }}>{value}</a>
                 : <span style={{ color: TEAL, wordBreak: 'break-all' }}>{value}</span>
