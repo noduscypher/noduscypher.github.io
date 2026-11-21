@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import ContentPolicy from './pages/ContentPolicy'
@@ -10,8 +10,6 @@ import RockPaperScissors from './pages/RockPaperScissors'
 import Minesweeper from './pages/Minesweeper'
 import Pacman from './pages/Pacman'
 import RnsptHub from './pages/RnsptHub'
-import RnsptRecursos from './pages/RnsptRecursos'
-import RnsptAderir from './pages/RnsptAderir'
 
 export default function App() {
   return (
@@ -28,8 +26,8 @@ export default function App() {
         <Route path="/minesweeper" element={<Minesweeper />} />
         <Route path="/pacman" element={<Pacman />} />
         <Route path="/rnspt" element={<RnsptHub />} />
-        <Route path="/rnspt/recursos" element={<RnsptRecursos />} />
-        <Route path="/rnspt/aderir" element={<RnsptAderir />} />
+        <Route path="/rnspt/recursos" element={<Navigate to="/rnspt" replace state={{ section: 'comunidade' }} />} />
+        <Route path="/rnspt/aderir" element={<Navigate to="/rnspt" replace state={{ section: 'como-funciona' }} />} />
       </Routes>
     </HashRouter>
   )
