@@ -5,8 +5,6 @@ const web = [
   { label: 'rnspt', desc: '[pt] comunidade Reticulum em Portugal', to: '/rnspt' },
   { label: 'MeshtasticPT', desc: 'comunidade Meshtastic em Portugal', href: 'https://meshtastic.pt' },
   { label: 'leandro fuego', desc: 'fire kitchen · regenerative food', href: 'https://rawmesh.neocities.org/leandro-fuego.html' },
-  { label: 'darkmoonmagic', desc: 'inner sovereignty', href: 'https://darkmoonmagic.org' },
-  { label: 'echo of coherence', desc: 'consciousness', href: 'https://youtube.com/@echoofcoherence' },
   { label: 'zitron.pt', desc: 'graphic & web design · bitcoin · nostr', href: 'https://zitron.pt' },
   { label: 'aceitabitcoin.pt', desc: 'negócios que aceitam Bitcoin em Portugal', href: 'https://aceitabitcoin.pt' },
   { label: 'bordalix · pinboard', desc: 'curated bookmarks', href: 'http://pinboard.in/u:bordalix' },
