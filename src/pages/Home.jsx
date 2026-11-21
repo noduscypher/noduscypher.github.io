@@ -67,8 +67,14 @@ export default function Home() {
         </div>
 
         <div style={{ marginBottom: 48, fontSize: 17 }}>
-          <span style={{ color: MUTED }}>new to reticulum? · </span>
-          <Link to="/start-here" style={linkStyle}>start here</Link>
+          <div>
+            <span style={{ color: MUTED }}>new to reticulum? · </span>
+            <Link to="/start-here" style={linkStyle}>start here</Link>
+          </div>
+          <div>
+            <span style={{ color: MUTED }}>new to meshtastic? · </span>
+            <a href="https://meshtastic.pt/getstarted" target="_blank" rel="noopener noreferrer" style={linkStyle}>start here</a>
+          </div>
         </div>
 
         <div style={{ marginBottom: 40, fontSize: 16 }}>
