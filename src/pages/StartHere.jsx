@@ -86,6 +86,11 @@ export default function StartHere() {
           ))}
         </div>
 
+        <div style={{ fontSize: 17 }}>
+          <Link to="/rnspt" style={{ color: TEAL, textDecoration: 'none' }}>rnspt</Link>
+          <span style={{ color: MUTED }}> · [pt] comunidade Reticulum em Portugal</span>
+        </div>
+
         <div style={{ marginTop: 40 }}>
           <Link to="/" style={{ color: TEAL, textDecoration: 'none', fontSize: 16 }}>← back</Link>
         </div>
