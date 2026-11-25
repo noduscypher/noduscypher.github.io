@@ -9,6 +9,7 @@ import Contacts from './pages/Contacts'
 import RockPaperScissors from './pages/RockPaperScissors'
 import Minesweeper from './pages/Minesweeper'
 import Pacman from './pages/Pacman'
+import Crapo from './pages/Crapo'
 import RnsptHub from './pages/RnsptHub'
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/minesweeper" element={<Minesweeper />} />
         <Route path="/pacman" element={<Pacman />} />
+        <Route path="/crapo" element={<Crapo />} />
         <Route path="/rnspt" element={<RnsptHub />} />
         <Route path="/rnspt/recursos" element={<Navigate to="/rnspt" replace state={{ section: 'comunidade' }} />} />
         <Route path="/rnspt/aderir" element={<Navigate to="/rnspt" replace state={{ section: 'como-funciona' }} />} />
